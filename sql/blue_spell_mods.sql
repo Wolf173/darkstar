@@ -150,7 +150,7 @@ INSERT INTO `blue_spell_mods` VALUES ('544', '13', '1'); -- MND+1
 -- ----------------------------
 -- Sickle Slash
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('545', '2', '-5'); -- HP+5
+INSERT INTO `blue_spell_mods` VALUES ('545', '2', '-5'); -- HP-5
 INSERT INTO `blue_spell_mods` VALUES ('545', '5', '15'); -- MP+15
 
 -- ----------------------------
@@ -927,70 +927,76 @@ INSERT INTO `blue_spell_mods` VALUES ('707', '12', '3'); -- INT+3
 -- ----------------------------
 -- Subduction
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('708', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('708', '5', '25'); -- MP+25
+INSERT INTO `blue_spell_mods` VALUES ('708', '10', '6'); -- VIT+6
+INSERT INTO `blue_spell_mods` VALUES ('708', '12', '6'); -- INT+6
 
 -- ----------------------------
 --  Thrashing Assault
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('709', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('709', '2', '20'); -- HP+20
+INSERT INTO `blue_spell_mods` VALUES ('709', '9', '8'); -- DEX+8
 
 -- ----------------------------
 -- Erratic Flutter
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('710', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('710', '2', '15'); -- HP+15
+INSERT INTO `blue_spell_mods` VALUES ('710', '5', '15'); -- MP+15
+INSERT INTO `blue_spell_mods` VALUES ('710', '11', '5'); -- AGI+5
+INSERT INTO `blue_spell_mods` VALUES ('710', '14', '5'); -- CHR+5
 
 -- ----------------------------
 -- Thunderbolt
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('736', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('736', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Harden Shell
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('737', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('737', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Absolute Terror
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('738', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('738', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Gates of Hades
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('739', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('739', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Tourbillion
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('740', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('740', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Pyric Bulwark
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('741', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('741', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Bilgestorm
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('742', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('742', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Bloodrake
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('743', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('743', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Droning Whirlwind
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('744', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('744', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Carcharian Verve
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('745', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('745', '0', '0'); -- No Mods.
 
 -- ----------------------------
 -- Blistering Roar
 -- ----------------------------
-INSERT INTO `blue_spell_mods` VALUES ('746', '0', '0'); -- 
+INSERT INTO `blue_spell_mods` VALUES ('746', '0', '0'); -- No Mods.
 
