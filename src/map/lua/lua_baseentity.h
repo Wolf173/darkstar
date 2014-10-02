@@ -378,6 +378,7 @@ public:
     int32 hasPet(lua_State*);                // returns true if the player has a pet
     int32 getPet(lua_State*);                // Creates an LUA reference to a pet entity
     int32 getPetID(lua_State*);              // If the entity has a pet, returns the PetID to identify pet type.
+    int32 isJugPet(lua_State*);              // If the entity has a pet, test if it is a jug pet.
     int32 familiar(lua_State*);              // familiar on pet
 
     int32 wakeUp(lua_State*);                //wakes target if necessary
@@ -582,6 +583,7 @@ public:
     int32 getCurrentAction(lua_State* L);
     int32 getAllegiance(lua_State* L);
 	int32 stun(lua_State* L);
+    int32 weaknessTrigger(lua_State* L);
 };
 
 #endif

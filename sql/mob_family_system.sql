@@ -499,7 +499,7 @@ INSERT INTO `mob_family_system` VALUES (464,'Snapweed',17,'Plantoid',0,40,90,90,
 INSERT INTO `mob_family_system` VALUES (465,'Yumcax',17,'Plantoid',3,40,120,120,1,2,1,2,3,1,3,3,3,3,3,1,1,1,1,1.25,1,1,1,1,1,1,1.25,4);
 INSERT INTO `mob_family_system` VALUES (467,'Gallu',9,'Demon',2,70,110,140,1,2,4,4,1,2,4,3,3,3,3,1,1,1,1,0.75,0.75,0.75,0.75,0.75,0.75,1.25,0.75,8);
 INSERT INTO `mob_family_system` VALUES (468,'Umbril',3,'Arcana',1,40,90,90,1,3,4,3,6,6,5,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,0);
-INSERT INTO `mob_family_system` VALUES (469,'Medusa',7,'Beastmen',2,40,100,140,3,3,3,1,1,2,2,3,3,3,3,1,1,1,1,1,1.125,1,1,1.125,0.875,1,1,8);
+INSERT INTO `mob_family_system` VALUES (469,'Medusa',7,'Beastmen',1,40,100,140,3,3,3,1,1,2,2,3,3,3,3,1,1,1,1,1,1.125,1,1,1.125,0.875,1,1,8);
 INSERT INTO `mob_family_system` VALUES (470,'Yilbegan',10,'Dragon',4,40,120,90,1,3,1,3,6,3,1,3,3,3,3,1,1,1,1,1,1,1.125,1,1,1,1,1,3);
 INSERT INTO `mob_family_system` VALUES (471,'Harpeia',8,'Bird',3,60,130,120,1,3,4,3,4,4,5,3,3,3,2,0.75,1.25,1,0.75,1,1.25,0.5,1,1,1,1,1,7);
 INSERT INTO `mob_family_system` VALUES (472,'Naraka',19,'Undead',2,40,70,140,6,3,6,3,1,5,4,3,3,3,3,0.75,0.75,0.5,0.5,1.25,0.3,1,1,1,1,1,0.3,2);
@@ -507,14 +507,14 @@ INSERT INTO `mob_family_system` VALUES (473,'Lady_Lilith',13,'Humanoid',0,40,90,
 INSERT INTO `mob_family_system` VALUES (474,'Lilith_Ascendant',18,'Unclassified',1,40,120,140,1,1,1,1,1,1,1,3,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,8);
 INSERT INTO `mob_family_system` VALUES (475,'Shinryu',10,'Dragon',4,50,115,90,1,2,1,3,6,3,3,3,3,3,3,1,1,1,1,0.5,1,0.875,1,1,1,1.25,0.375,7);
 INSERT INTO `mob_family_system` VALUES (476,'Prishe',13,'Humanoid',0,40,100,90,2,5,3,6,6,2,4,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,0);
-INSERT INTO `mob_family_system` VALUES (477,'Selh\teus',13,'Humanoid',0,40,90,110,3,3,2,3,2,2,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,0);
+INSERT INTO `mob_family_system` VALUES (477,'Selh\'teus',13,'Humanoid',0,40,90,110,3,3,2,3,2,2,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,0);
 INSERT INTO `mob_family_system` VALUES (478,'God',18,'Unclassified',3,40,120,140,1,1,1,1,1,1,1,3,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,0);
 INSERT INTO `mob_family_system` VALUES (479,'King_Behemoth',6,'Beast',4,40,110,90,1,3,4,3,6,6,5,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,6);
 INSERT INTO `mob_family_system` VALUES (480,'Zeid',13,'Humanoid',0,40,120,100,3,4,1,5,5,4,6,3,3,3,3,1,1,1,1,1.125,1,1,1,1,1,1.126,0.875,0);
 INSERT INTO `mob_family_system` VALUES (481,'Zeid',13,'Humanoid',0,40,120,100,3,4,1,5,5,4,6,3,3,3,3,1,1,1,1,1.125,1,1,1,1,1,1.126,0.875,0);
 INSERT INTO `mob_family_system` VALUES (482,'Volker',13,'Humanoid',0,40,90,110,3,3,2,3,2,2,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,0);
 INSERT INTO `mob_family_system` VALUES (483,'Trion',13,'Humanoid',0,40,100,90,2,5,3,6,6,2,4,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,0);
-INSERT INTO `mob_family_system` VALUES (500,'Pantokrator',18,'Unclassified',2,40,100,120,3,3,3,3,3,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,0);
+
 /*!40000 ALTER TABLE `mob_family_system` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

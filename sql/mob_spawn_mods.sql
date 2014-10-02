@@ -37,7 +37,6 @@ CREATE TABLE `mob_spawn_mods` (
 
 LOCK TABLES `mob_spawn_mods` WRITE;
 /*!40000 ALTER TABLE `mob_spawn_mods` DISABLE KEYS */;
-INSERT INTO `mob_spawn_mods` VALUES (16998862,32,479,3);
 INSERT INTO `mob_spawn_mods` VALUES (16806117,288,40,0); -- Sargas DA guestimate
 INSERT INTO `mob_spawn_mods` VALUES (17240232,23,50,0); -- Tegmine attack bonus guestimate, he hits hard for a crab on retail
 INSERT INTO `mob_spawn_mods` VALUES (17240232,288,40,0); -- Tegmine DA guestimate
