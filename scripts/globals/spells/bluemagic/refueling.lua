@@ -16,6 +16,7 @@ function OnMagicCastingCheck(caster,target,spell)
 end;
 
 function onSpellCast(caster,target,spell)
+
     local duration = 300;
     
     if(caster:hasStatusEffect(EFFECT_DIFFUSION)) then

@@ -1,10 +1,8 @@
 -----------------------------------------
--- Bluemagic: Cimicine Discharge
--- Reduces the attack speed of enemies within range.
--- DEX +1  AGI +2
--- Lvl.: 78 MP Cost: 32 Blue Points: 3
---
--- Duration: Variable, with max of 3 min
+-- Spell: Cimicine Discharge
+-- Spell accuracy is most highly affected by Enfeebling Magic Skill, Magic Accuracy, and MND.
+-- Slow's potency is calculated with the formula (150 + dMND*2)/1024, and caps at 300/1024 (~29.3%).
+-- And MND of 75 is neccessary to reach the hardcap of Slow.
 -----------------------------------------
 
 require("scripts/globals/magic");
@@ -12,35 +10,36 @@ require("scripts/globals/status");
 require("scripts/globals/bluemagic");
 
 -----------------------------------------
--- OnMagicCastingCheck
------------------------------------------
-
-function OnMagicCastingCheck(caster,target,spell)
-    return 0;
-end;
-
------------------------------------------
 -- OnSpellCast
 -----------------------------------------
 
+function OnMagicCastingCheck(caster,target,spell)
+	return 0;
+end;
+
 function onSpellCast(caster,target,spell)
-    local duration = math.random(60,180);
-    local bonus = AffinityBonus(caster, spell:getElement());
-    local pINT = caster:getStat(MOD_INT);
-    local mINT = target:getStat(MOD_INT);
-    local dINT = (pINT - mINT);
-    local resist = applyResistance(caster,spell,target,dINT,BLUE_SKILL,bonus);
+    local dMND = (caster:getStat(MOD_MND) - target:getStat(MOD_MND));
+    --local bonus = AffinityBonus(caster, spell:getElement()); Removed: affinity bonus is added in applyResistance
 
-    if(resist < 0.5) then
-        spell:setMsg(85); --resist message
-        return EFFECT_SLOW;
+    --Power.
+    local power = 150 + dMND * 2;
+    if(power > 350) then
+        power = 350;
     end
 
-    if(target:addStatusEffect(EFFECT_SLOW,200,0,getBlueEffectDuration(caster,resist,EFFECT_SLOW)) then
-        spell:setMsg(236);
+    --Duration, including resistance.
+    local duration = 120 * applyResistanceEffect(caster,spell,target,dMND,35,0,EFFECT_SLOW);
+    if(duration >= 60) then --Do it!
+
+        if(target:addStatusEffect(EFFECT_SLOW,power,0,duration, 0, 1)) then
+            spell:setMsg(236);
+        else
+            spell:setMsg(75);
+        end
+
     else
-        spell:setMsg(75);
+        spell:setMsg(85);
     end
 
-    return EFFECT_SLOW;
+	return EFFECT_SLOW;
 end;

@@ -1,37 +1,35 @@
 -----------------------------------------
--- Bluemagic: Battery Charge
--- Gradually restores MP
--- MP +10  MND +1
--- Lvl.: 79 MP Cost: 50 Blue Points: 3
+-- Spell: Battery Charge
 -----------------------------------------
-
-require("scripts/globals/settings");
 require("scripts/globals/status");
 require("scripts/globals/magic");
-
------------------------------------------
--- OnMagicCastingCheck
------------------------------------------
-
-function OnMagicCastingCheck(caster,target,spell)
-    return 0;
-end;
-
+require("scripts/globals/bluemagic");
 -----------------------------------------
 -- OnSpellCast
 -----------------------------------------
+
+function OnMagicCastingCheck(caster,target,spell)
+	return 0;
+end;
+
 function onSpellCast(caster,target,spell)
 
-    if(target:hasStatusEffect(EFFECT_REFRESH)) then
-        target:delStatusEffect(EFFECT_REFRESH);
-    end
 
-    if(target:addStatusEffect(EFFECT_REFRESH,3,3,300)) then
-        spell:setMsg(230);
-    else
-        spell:setMsg(75); -- no effect
-    end
+    local mp = 8;
+	local duration = 300;
+	if (caster:hasStatusEffect(EFFECT_DIFFUSION) == true and caster:getID() == target:getID()) then
+		duration = duration * 3;
+	end
+
+	if (target:getMainLvl() < 75) then
+		duration = duration * target:getMainLvl() / 75;
+	end
+	if (target:hasStatusEffect(EFFECT_DIFFUSION) or target:hasStatusEffect(EFFECT_DIFFUSION)) then
+		spell:setMsg(75);
+		return 0;
+	end
+	target:delStatusEffect(EFFECT_REFRESH);
+	target:addStatusEffect(EFFECT_REFRESH,mp,3,duration);
 
     return EFFECT_REFRESH;
-
 end;
