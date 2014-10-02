@@ -1,18 +1,20 @@
 -----------------------------------
---	Area: Port Windurst
---	NPC: Willis
---	Standard Info NPC
+-- Area: Port Bastok
+-- NPC: Ivan
+-- Abyssea warp npc
 -----------------------------------
-package.loaded["scripts/zones/Port_Windurst/TextIDs"] = nil;
+package.loaded["scripts/zones/Port_Bastok/TextIDs"] = nil;
 -----------------------------------
-
-require("scripts/zones/Port_Windurst/TextIDs");
+require("scripts/globals/settings");
+require("scripts/globals/quests");
+require("scripts/zones/Port_Bastok/TextIDs");
 
 -----------------------------------
 -- onTrade Action
 -----------------------------------
 
 function onTrade(player,npc,trade)
+
 end; 
 
 -----------------------------------
@@ -40,10 +42,10 @@ function onTrigger(player,npc)
 	else 
 		MawUnlock = player:getVar("MawUnlock[BIT]");
 	end
-	-- print("onEventSelection")
-    -- print("onEventSelection - CSID:",csid);
-    -- print("onEventSelection - option ===",option);
-	player:startEvent(0x0369,AbysseaStatus,cruor,511);
+	print("onEventSelection")
+    print("onEventSelection - CSID:",csid);
+    print("onEventSelection - option ===",option);
+	player:startEvent(404,AbysseaStatus,cruor,511);
 	
 end;
 
@@ -90,9 +92,13 @@ function onEventFinish(player,csid,option)
 		player:setPos(270, -7, -84, 192, 112);	
 	end
 	player:delCruor(cost);
-	-- print("onEventFinish")
-    -- print("onEventFinish - CSID:",csid);
-    -- print("onEventFinish - option ===",option);
+	print("onEventFinish")
+    print("onEventFinish - CSID:",csid);
+    print("onEventFinish - option ===",option);
 --printf("CSID: %u",csid);
 --printf("RESULT: %u",option);
 end;
+
+
+
+

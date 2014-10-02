@@ -1,18 +1,29 @@
 -----------------------------------
---	Area: Port Windurst
---	NPC: Willis
---	Standard Info NPC
+-- Area: Port San d'Oria
+-- NPC: Ivan
+-- Abyssea warp npc
 -----------------------------------
-package.loaded["scripts/zones/Port_Windurst/TextIDs"] = nil;
+package.loaded["scripts/zones/Port_San_dOria/TextIDs"] = nil;
 -----------------------------------
-
-require("scripts/zones/Port_Windurst/TextIDs");
+require("scripts/globals/settings");
+require("scripts/globals/quests");
+require("scripts/zones/Port_San_dOria/TextIDs");
 
 -----------------------------------
 -- onTrade Action
 -----------------------------------
 
 function onTrade(player,npc,trade)
+-- "Flyers for Regine" conditional script
+FlyerForRegine = player:getQuestStatus(SANDORIA,FLYERS_FOR_REGINE);
+
+	if (FlyerForRegine == 1) then
+		count = trade:getItemCount();
+		MagicFlyer = trade:hasItemQty(532,1);
+		if (MagicFlyer == true and count == 1) then
+			player:messageSpecial(FLYER_REFUSED);
+		end
+	end
 end; 
 
 -----------------------------------
@@ -40,10 +51,10 @@ function onTrigger(player,npc)
 	else 
 		MawUnlock = player:getVar("MawUnlock[BIT]");
 	end
-	-- print("onEventSelection")
-    -- print("onEventSelection - CSID:",csid);
-    -- print("onEventSelection - option ===",option);
-	player:startEvent(0x0369,AbysseaStatus,cruor,511);
+	--print("onEventSelection")
+   -- print("onEventSelection - CSID:",csid);
+   -- print("onEventSelection - option ===",option);
+	player:startEvent(795,AbysseaStatus,cruor,511);
 	
 end;
 
@@ -90,9 +101,13 @@ function onEventFinish(player,csid,option)
 		player:setPos(270, -7, -84, 192, 112);	
 	end
 	player:delCruor(cost);
-	-- print("onEventFinish")
-    -- print("onEventFinish - CSID:",csid);
-    -- print("onEventFinish - option ===",option);
+	--print("onEventFinish")
+   --print("onEventFinish - CSID:",csid);
+    --print("onEventFinish - option ===",option);
 --printf("CSID: %u",csid);
 --printf("RESULT: %u",option);
 end;
+
+
+
+

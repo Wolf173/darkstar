@@ -172,3 +172,6 @@ NUMBER_OF_DM_EARRINGS = 1; -- Number of earrings players can simultaneously own 
 --LIMBUS
 BETWEEN_2COSMOCLEANSE_WAIT_TIME = 3; -- day between 2 limbus keyitem  (default 3 days)
 DIMENSIONAL_PORTAL_UNLOCK = false; -- Set true to bypass requirements for using dimensional portals to reach sea for Limbus
+
+--ABYSSEA
+MAW_UNLOCK = true; -- Set to true to unlock all Maw teleports.

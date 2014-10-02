@@ -1,18 +1,21 @@
 -----------------------------------
---	Area: Port Windurst
---	NPC: Willis
---	Standard Info NPC
+-- Area: Port Bastok
+-- NPC: Kierron
+-- Abyssea warp npc
 -----------------------------------
-package.loaded["scripts/zones/Port_Windurst/TextIDs"] = nil;
+package.loaded["scripts/zones/Heavens_Tower/TextIDs"] = nil;
 -----------------------------------
 
-require("scripts/zones/Port_Windurst/TextIDs");
+require("scripts/zones/Heavens_Tower/TextIDs");
+require("scripts/globals/settings");
+require("scripts/globals/quests");
 
 -----------------------------------
 -- onTrade Action
 -----------------------------------
 
 function onTrade(player,npc,trade)
+
 end; 
 
 -----------------------------------
@@ -43,7 +46,7 @@ function onTrigger(player,npc)
 	-- print("onEventSelection")
     -- print("onEventSelection - CSID:",csid);
     -- print("onEventSelection - option ===",option);
-	player:startEvent(0x0369,AbysseaStatus,cruor,511);
+	player:startEvent(433,AbysseaStatus,cruor,511);
 	
 end;
 
@@ -96,3 +99,7 @@ function onEventFinish(player,csid,option)
 --printf("CSID: %u",csid);
 --printf("RESULT: %u",option);
 end;
+
+
+
+

@@ -1,18 +1,25 @@
 -----------------------------------
---	Area: Port Windurst
---	NPC: Willis
---	Standard Info NPC
+-- Area: Port Jeuno
+-- NPC: Horst
+-- Abyssea Maw teleporter
 -----------------------------------
-package.loaded["scripts/zones/Port_Windurst/TextIDs"] = nil;
+package.loaded["scripts/zones/Port_Jeuno/TextIDs"] = nil;
+package.loaded["scripts/globals/settings"] = nil;
 -----------------------------------
 
-require("scripts/zones/Port_Windurst/TextIDs");
+require("scripts/globals/settings");
+require("scripts/globals/titles");
+require("scripts/globals/keyitems");
+require("scripts/globals/shop");
+require("scripts/globals/quests");
+require("scripts/zones/Port_Jeuno/TextIDs");
 
 -----------------------------------
 -- onTrade Action
 -----------------------------------
 
 function onTrade(player,npc,trade)
+	
 end; 
 
 -----------------------------------
@@ -40,10 +47,10 @@ function onTrigger(player,npc)
 	else 
 		MawUnlock = player:getVar("MawUnlock[BIT]");
 	end
-	-- print("onEventSelection")
-    -- print("onEventSelection - CSID:",csid);
-    -- print("onEventSelection - option ===",option);
-	player:startEvent(0x0369,AbysseaStatus,cruor,511);
+	--print("onEventSelection")
+    --print("onEventSelection - CSID:",csid);
+    --print("onEventSelection - option ===",option);
+	player:startEvent(339,AbysseaStatus,cruor,511);
 	
 end;
 
@@ -90,9 +97,9 @@ function onEventFinish(player,csid,option)
 		player:setPos(270, -7, -84, 192, 112);	
 	end
 	player:delCruor(cost);
-	-- print("onEventFinish")
-    -- print("onEventFinish - CSID:",csid);
-    -- print("onEventFinish - option ===",option);
+	--print("onEventFinish")
+    --print("onEventFinish - CSID:",csid);
+   -- print("onEventFinish - option ===",option);
 --printf("CSID: %u",csid);
 --printf("RESULT: %u",option);
 end;

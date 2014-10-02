@@ -1,18 +1,20 @@
 -----------------------------------
---	Area: Port Windurst
---	NPC: Willis
---	Standard Info NPC
+-- NPC: Vincent
+-- Abyssea warp npc
 -----------------------------------
-package.loaded["scripts/zones/Port_Windurst/TextIDs"] = nil;
+package.loaded["scripts/zones/RuLude_Gardens/TextIDs"] = nil;
 -----------------------------------
 
-require("scripts/zones/Port_Windurst/TextIDs");
+require("scripts/globals/settings");
+require("scripts/globals/keyitems");
+require("scripts/zones/RuLude_Gardens/TextIDs");
 
 -----------------------------------
 -- onTrade Action
 -----------------------------------
 
 function onTrade(player,npc,trade)
+
 end; 
 
 -----------------------------------
@@ -43,7 +45,7 @@ function onTrigger(player,npc)
 	-- print("onEventSelection")
     -- print("onEventSelection - CSID:",csid);
     -- print("onEventSelection - option ===",option);
-	player:startEvent(0x0369,AbysseaStatus,cruor,511);
+	player:startEvent(10185 ,AbysseaStatus,cruor,511);
 	
 end;
 
@@ -96,3 +98,7 @@ function onEventFinish(player,csid,option)
 --printf("CSID: %u",csid);
 --printf("RESULT: %u",option);
 end;
+
+
+
+
