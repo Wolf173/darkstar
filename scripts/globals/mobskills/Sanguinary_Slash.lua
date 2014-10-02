@@ -1,5 +1,5 @@
 ---------------------------------------------------
--- Shoulder Attack
+-- Sanguinary Slash
 -- Deals damage to a single target. Additional effect: knockback
 ---------------------------------------------------
 

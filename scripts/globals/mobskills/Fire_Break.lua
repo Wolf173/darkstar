@@ -1,11 +1,10 @@
 ---------------------------------------------
---  Fiery Breath
+--  Fire Break
 --
 --  Description: Deals Fire damage to enemies within a fan-shaped area.
 --  Type: Breath
 --  Utsusemi/Blink absorb: Ignores shadows
 --  Range: Unknown cone
---  Notes: Used only by Tiamat, Smok and Ildebrann
 ---------------------------------------------
 require("/scripts/globals/settings");
 require("/scripts/globals/status");

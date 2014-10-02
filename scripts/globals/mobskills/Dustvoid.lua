@@ -1,6 +1,5 @@
 ---------------------------------------------
---  Heavy Whisk
---
+--  Dust Void--
 --  Description: Damage varies with TP.
 --  Type: Physical (Blunt)
 --

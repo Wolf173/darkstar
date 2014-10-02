@@ -1,5 +1,5 @@
 ---------------------------------------------
---  Firespit
+--  Magma Fan
 --
 --  Description: Deals fire damage to an enemy.
 --  Type: Magical (Fire)

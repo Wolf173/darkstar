@@ -1,5 +1,5 @@
 ---------------------------------------------------
--- Bubble Shower
+-- Seaspray
 -- Deals Water damage in an area of effect. Additional effect: STR Down
 ---------------------------------------------------
 

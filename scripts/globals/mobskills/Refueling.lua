@@ -1,6 +1,5 @@
 ---------------------------------------------------
 -- Refueling
--- Steals an enemy's HP. Ineffective against undead.
 ---------------------------------------------------
 
 require("/scripts/globals/settings");

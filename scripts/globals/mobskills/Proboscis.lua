@@ -1,5 +1,5 @@
 ---------------------------------------------
---  Magic Hammer
+--  Proboscis
 --
 --  Description: Steals an amount of enemy's MP equal to damage dealt. Ineffective against undead.
 --  Type: Magical (Light)

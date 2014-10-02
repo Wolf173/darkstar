@@ -1,5 +1,5 @@
 ---------------------------------------------
---  Sonic Blade
+-- Turbine cyclone
 --  Smacks around all nearby targets. Additional effect: Knockback + Weight
 --  Utsusemi/Blink absorb: 2-3 shadows
 ---------------------------------------------

@@ -29,9 +29,9 @@ function onSpellCast(caster,target,spell)
         caster:delStatusEffect(EFFECT_DIFFUSION);
     end
     
-    if(target:addStatusEffect(EFFECT_HASTE,300,0,duration) == false) then
+    if(target:addStatusEffect(EFFECT_HASTE_II,50,0,duration) == false) then
     	spell:setMsg(75);
     end
 
-    return EFFECT_HASTE;
+    return EFFECT_HASTE_II;
 end;

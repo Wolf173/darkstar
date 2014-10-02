@@ -1,11 +1,10 @@
 ---------------------------------------------
---  Thundris Shriek
+--  Seismic impact
 --
 --  Description: Deals heavy lightning damage to targets in area of effect. Additional effect: Terror
 --  Type: Magical
 --  Utsusemi/Blink absorb: Wipes shadows
 --  Range: Unknown
---  Notes: Players will begin to be intimidated by the dvergr after this attack.
 ---------------------------------------------
 
 require("/scripts/globals/settings");

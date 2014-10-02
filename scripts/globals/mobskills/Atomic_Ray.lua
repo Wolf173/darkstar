@@ -1,5 +1,5 @@
 ---------------------------------------------------
--- Spike Flail
+-- Atomic Ray
 -- Deals extreme damage in a threefold attack to targets behind the user.
 ---------------------------------------------------
 

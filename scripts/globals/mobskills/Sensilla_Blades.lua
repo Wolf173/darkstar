@@ -1,11 +1,10 @@
 ---------------------------------------------
---  Rushing Slash
+--  Sensilla_Blades
 --
 --  Description: Delivers a fourfold attack on a single target.
 --  Type: Physical
 --  Utsusemi/Blink absorb: 4 shadows
 --  Range: Melee
---  Notes: Only used by Mamool Ja with slashing weapons.
 ---------------------------------------------
 
 require("/scripts/globals/settings");

@@ -1,11 +1,5 @@
 ---------------------------------------------
---  Groundburst
---
---  Description: Expels a fireball on targets in an area of effect.
---  Type: Physical
---  Utsusemi/Blink absorb: Wipes shadows
---  Range: Unknown radial
---  Notes: Only used by notorious monsters, and from any Mamool Ja in besieged.
+--  Erratic_Flutter
 ---------------------------------------------
 
 require("/scripts/globals/settings");

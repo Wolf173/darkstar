@@ -1,6 +1,5 @@
 ---------------------------------------------
---  Sweet Breath
---
+--  Aeolian Void--
 --  Description: Deals water damage to enemies within a fan-shaped area originating from the caster. Additional effect: Poison.
 --  Type: Magical Water (Element)
 --
