@@ -112,6 +112,18 @@ INSERT INTO `mob_droplist` VALUES (962,0,2931,200); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (962,0,2931,1000); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (962,0,12090,340); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (1621,0,16192,340); -- COMMENT ME
+DELETE FROM `mob_droplist` WHERE `dropId`=1628 and `type`=0 and `itemId`=3191 and `rate`=100; -- Tantra seal feet from Hanuman
+DELETE FROM `mob_droplist` WHERE `dropId`=1628 and `type`=0 and `itemId`=3199 and `rate`=100; -- Aoidos' seal feet from Hanuman
+DELETE FROM `mob_droplist` WHERE `dropId`=1628 and `type`=0 and `itemId`=3203 and `rate`=100; -- Lancer seal feet from Hanuman
+DELETE FROM `mob_droplist` WHERE `dropId`=1628 and `type`=0 and `itemId`=3209 and `rate`=100; -- Savant's seal feet from Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3191,280); -- Tantra seal feet into Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3191,480); -- Tantra seal feet into Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3199,290); -- Aoidos' seal feet into Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3199,490); -- Aoidos' seal feet into Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3203,230); -- Lancer seal feet into Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3203,630); -- Lancer seal feet into Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3209,300); -- Savant's seal feet into Hanuman
+INSERT INTO `mob_droplist` VALUES (1628,0,3209,500); -- Savant's seal feet into Hanuman
 INSERT INTO `mob_droplist` VALUES (1645,0,19397,340); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (1668,0,12095,340); -- COMMENT ME
 DELETE FROM `mob_droplist` WHERE `dropId`=1708 and `type`=0 and `itemId`=3198 and `rate`=100; -- Ferine seal feet from Hrosshvalur 
@@ -126,7 +138,6 @@ INSERT INTO `mob_droplist` VALUES (1708,0,3204,370); -- Callers seal feet into H
 INSERT INTO `mob_droplist` VALUES (1708,0,3204,170); -- Callers seal feet into Hrosshvalur
 INSERT INTO `mob_droplist` VALUES (1708,0,3205,380); -- Mavi seal feet into Hrosshvalur
 INSERT INTO `mob_droplist` VALUES (1708,0,3205,180); -- Mavi seal feet into Hrosshvalur
-
 DELETE FROM `mob_droplist` WHERE `dropId`=1774 and `type`=0 and `itemId`=3194 and `rate`=100; -- Estoqueur`s Seal Feet from Iktomi
 DELETE FROM `mob_droplist` WHERE `dropId`=1774 and `type`=0 and `itemId`=3195 and `rate`=100; -- Raider`s Seal Feet from Iktomi
 DELETE FROM `mob_droplist` WHERE `dropId`=1774 and `type`=0 and `itemId`=3196 and `rate`=100; -- Creed Seal Feet from Iktomi
@@ -161,6 +172,13 @@ INSERT INTO `mob_droplist` VALUES (2487,0,28440,150); -- Windbuffet Belt +1
 INSERT INTO `mob_droplist` VALUES (2721,0,3287,200); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (2721,0,3287,1000); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (2732,0,18574,340); -- COMMENT ME
+DELETE FROM `mob_droplist` WHERE `dropId`=2805 and `type`=0 and `itemId`=1724 and `rate`=90; -- Soulflayer robe from Pneumaflayer
+DELETE FROM `mob_droplist` WHERE `dropId`=2805 and `type`=0 and `itemId`=2335 and `rate`=90; -- Soulflayer Tentacle from Pneumaflayer
+DELETE FROM `mob_droplist` WHERE `dropId`=2805 and `type`=0 and `itemId`=3102 and `rate`=100; -- Stiffened  Tentacle from Pneumaflayer
+INSERT INTO `mob_droplist` VALUES (2805,0,3196,60); -- Creed Seal Feet into Pneumaflayer
+INSERT INTO `mob_droplist` VALUES (2805,0,3199,60); -- Aoidos' Seal Feet into Pneumaflayer
+INSERT INTO `mob_droplist` VALUES (2805,0,3200,60); -- Sylvan Seal Feet into Pneumaflayer
+INSERT INTO `mob_droplist` VALUES (2805,0,3205,60); -- Mavi Seal Feet into Pneumaflayer
 INSERT INTO `mob_droplist` VALUES (3106,0,2967,200); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (3106,0,2967,1000); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (3106,0,19398,340); -- COMMENT ME
@@ -184,7 +202,6 @@ INSERT INTO `mob_droplist` VALUES (4071,0,12107,340); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4516,0,19302,330); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4519,0,12103,340); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4519,0,19401,340); -- COMMENT ME
-
 DELETE FROM `mob_droplist` WHERE `dropId`=4519 and `type`=0 and `itemId`=17854 and `rate`=133; -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4519,0,13791,420); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4519,0,11733,1000); -- COMMENT ME
@@ -277,7 +294,6 @@ INSERT INTO `mob_droplist` VALUES (4542,0,3206,360); -- Navarch's seal feet from
 INSERT INTO `mob_droplist` VALUES (4542,0,3191,400); -- Tantra seal feet from Pascerpot
 INSERT INTO `mob_droplist` VALUES (4542,0,3191,430); -- Tantra seal feet from Pascerpot
 INSERT INTO `mob_droplist` VALUES (4542,0,12101,340); -- COMMENT ME
-
 INSERT INTO `mob_droplist` VALUES (4543,0,12089,340); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4543,0,28404,225); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4543,0,11361,87); -- COMMENT ME
@@ -294,10 +310,10 @@ INSERT INTO `mob_droplist` VALUES (4544,0,11798,200); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4544,0,11362,200); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4544,0,3925,1000); -- COMMENT ME
 INSERT INTO `mob_droplist` VALUES (4544,0,3925,100); -- COMMENT ME
-INSERT INTO `mob_droplist` VALUES (4545,0,15807,140); -- COMMENT ME
-INSERT INTO `mob_droplist` VALUES (4545,0,4023,1000); -- COMMENT ME
-INSERT INTO `mob_droplist` VALUES (4545,0,4023,250); -- COMMENT ME
-INSERT INTO `mob_droplist` VALUES (4545,0,4023,50); -- COMMENT ME
+INSERT INTO `mob_droplist` VALUES (4545,0,15807,140); -- Balrahn's Ring Hydra
+INSERT INTO `mob_droplist` VALUES (4545,0,4023,1000); -- Snowsteel Ore Hydra
+INSERT INTO `mob_droplist` VALUES (4545,0,4023,250); -- Snowsteel Ore Hydra
+INSERT INTO `mob_droplist` VALUES (4545,0,4023,50); -- Snowsteel Ore Hydra
 
 
 -- -------- Begin Legion Drop-- In Progress - Jewels-Trophy-MainGear Only ATM -----
